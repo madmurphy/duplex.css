@@ -54,6 +54,10 @@ section.duplex > article:last-of-type {
 	border: 3px #ffffff solid;
 	background-color: rgba(255,255,255,.5);
 	box-shadow: 8px 8px 8px rgba(0,0,0,.9);
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 section.duplex:hover,
@@ -62,14 +66,6 @@ section.duplex > article:last-of-type {
 	-moz-transform: rotateY(180deg);
 	-o-transform: rotateY(180deg);
 	transform: rotateY(180deg);
-}
-
-section.duplex,
-section.duplex > * {
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-o-backface-visibility: hidden;
-	backface-visibility: hidden;
 }
 
 section.duplex > section,
