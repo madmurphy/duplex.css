@@ -7,7 +7,7 @@
 |*|
 |*|	https://github.com/madmurphy/duplex.css/
 |*|
-|*|	Version 1.0.0
+|*|	Version 1.0.1
 |*|
 |*|	(c) Stefano Gioffr&eacute;
 |*|
@@ -35,7 +35,12 @@ section.duplex {
 	-moz-transform-style: preserve-3d;
 	-o-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-
+	/*
+	-webkit-transition-delay: .2s;
+	-moz-transition-delay: .2s;
+	-o-transition-delay: .2s;
+	transition-delay: .2s;
+	*/
 }
 
 section.duplex > article:last-of-type {
@@ -51,8 +56,8 @@ section.duplex > article:last-of-type {
 section.duplex,
 section.duplex > article:last-of-type {
 	padding: 8px;
-	border: 3px #ffffff solid;
-	background-color: rgba(255,255,255,.5);
+	border: 3px transparent solid;
+	background-color: rgba(255,255,255,.75);
 	box-shadow: 8px 8px 8px rgba(0,0,0,.9);
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
@@ -87,3 +92,4 @@ section.duplex > footer:last-of-type {
 	overflow: hidden;
 	text-align: left;
 }
+

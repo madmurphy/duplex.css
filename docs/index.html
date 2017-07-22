@@ -5,12 +5,18 @@
 <link href="duplex_min.css" rel="stylesheet">
 <title>CSS duplex view</title>
 <style type="text/css">
+body {
+	font-family: sans-serif;
+	background: #d7b58f url("flowers.jpg") repeat left top;
+}
+
 .myexample {
 	display: inline-block;
 	width: 250px;
 	height: 280px;
 	margin: 0 12px;
 	font-family: monospace;
+	vertical-align: middle;
 }
 
 .myexample h1 {
@@ -29,7 +35,7 @@
 
 <h2>Syntax</h2>
 
-<pre><span style="background-color: #ffff00;">&lt;section class="duplex"&gt;</span><br />&nbsp; &lt;whatever-you-want /&gt;<br />&nbsp; &lt;whatever-you-want /&gt;<em><br />&nbsp; [FRONT CONTENT]</em><br />&nbsp; &lt;whatever-you-want /&gt;<br />&nbsp; <span style="background-color: #0098ff;">&lt;article&gt;</span><br />&nbsp;&nbsp;&nbsp; <em>[BACK CONTENT]</em><br />&nbsp; <span style="background-color: #0098ff;">&lt;/article&gt;</span><br /><span style="background-color: #ffff00;">&lt;/section&gt;</span></pre>
+<pre><span style="background-color: #ffff00;">&lt;section class="duplex"&gt;</span><br />&nbsp; &lt;whatever-you-want /&gt;<em><br />&nbsp; [FRONT CONTENT]</em><br />&nbsp; &lt;whatever-you-want /&gt;<br />&nbsp; <span style="background-color: #0098ff;">&lt;article&gt;</span><br />&nbsp;&nbsp;&nbsp; &lt;whatever-you-want /&gt;<br />&nbsp;&nbsp;&nbsp; <em>[BACK CONTENT]</em><br />&nbsp;&nbsp;&nbsp; &lt;whatever-you-want /&gt;<br />&nbsp; <span style="background-color: #0098ff;">&lt;/article&gt;</span><br /><span style="background-color: #ffff00;">&lt;/section&gt;</span></pre>
 
 <h2>Example</h2>
 

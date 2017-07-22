@@ -1,10 +1,10 @@
 {
 	"name": "duplex.css",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A simple \"flip effect\" for double-sided contents written in pure CSS",
 	"style": "duplex.css",
 	"license": "GPL-3.0",
-	"author": "Stefano Gioffr\u00E9",
+	"author": "madmurphy",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/madmurphy/duplex.css.git"
