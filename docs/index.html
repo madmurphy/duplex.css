@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="duplex_min.css" rel="stylesheet">
+<link href="duplex.min.css" rel="stylesheet">
 <title>CSS duplex view</title>
 <style type="text/css">
 body {
@@ -35,59 +35,76 @@ body {
 
 <h2>Syntax</h2>
 
-<pre><span style="background-color: #ffff00;">&lt;section class="duplex"&gt;</span><br />&nbsp; &lt;whatever-you-want /&gt;<em><br />&nbsp; [FRONT CONTENT]</em><br />&nbsp; &lt;whatever-you-want /&gt;<br />&nbsp; <span style="background-color: #0098ff;">&lt;article&gt;</span><br />&nbsp;&nbsp;&nbsp; &lt;whatever-you-want /&gt;<br />&nbsp;&nbsp;&nbsp; <em>[BACK CONTENT]</em><br />&nbsp;&nbsp;&nbsp; &lt;whatever-you-want /&gt;<br />&nbsp; <span style="background-color: #0098ff;">&lt;/article&gt;</span><br /><span style="background-color: #ffff00;">&lt;/section&gt;</span></pre>
+<pre><span style="background-color: #ffff00;">&lt;article class="duplex"&gt;</span>
+  <span style="background-color: #0098ff;">&lt;header&gt;</span>
+    &lt;whatever-you-want /&gt;
+    <em>[FRONT CONTENT]</em>
+    &lt;whatever-you-want /&gt;
+  <span style="background-color: #0098ff;">&lt;/header&gt;</span>
+  <span style="background-color: #0098ff;">&lt;whatever-you-want&gt;</span>
+    &lt;whatever-you-want /&gt;
+    <em>[BACK CONTENT]</em>
+    &lt;whatever-you-want /&gt;
+  <span style="background-color: #0098ff;">&lt;/whatever-you-want&gt;</span>
+<span style="background-color: #ffff00;">&lt;/article&gt;</span></pre>
 
-<h2>Example</h2>
+<h3>Optional attributes</h3>
+
+<dl>
+	<dt><code>data-watermark</code></dt>
+	<dd>Create an overlay and a watermark text</dd>
+</dl>
+
+<h2>Examples</h2>
 
 <div style="text-align: center;">
-	<section class="myexample duplex">
+	<article class="myexample duplex">
 		<header>
 			<p><img src="1.jpg" alt="Into the woods" /></p>
 			<h1>Into the woods</h1>
 			<p>Lorem ipsum dolor sit amet</p>
 		</header>
-		<article>
+		<div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum at lectus non efficitur. Aliquam erat volutpat. Cras commodo, sapien mollis congue finibus, dolor nulla pellentesque lorem, eu aliquet ante leo sed leo. In suscipit turpis id metus tincidunt posuere. Quisque sit amet pellentesque eros. Phasellus sit amet ligula lectus. Curabitur porta dapibus aliquet. Sed fermentum viverra venenatis. Maecenas id nisi nec arcu luctus eleifend at non dui. Nunc auctor, risus ut malesuada ornare, velit est vestibulum erat, id scelerisque sem nulla ac velit. Etiam feugiat vehicula felis ut bibendum. Curabitur scelerisque vulputate eros at luctus. Praesent varius egestas neque, id egestas dui convallis in. Aenean eget erat lectus.</p>
-		</article>
+		</div>
 		<footer>(c) 2017 John Doe</footer>
-	</section>
-	<section class="myexample duplex">
+	</article>
+	<article class="myexample duplex" data-watermark="Lorem ipsum">
 		<header>
 			<p><img src="2.jpg" alt="Yellow at the lake" /></p>
 			<h1>Yellow at the lake</h1>
 			<p>Nullam pellentesque commodo nisi</p>
 		</header>
-		<article>
+		<div>
 			<p>Nullam pellentesque commodo nisi, vitae pharetra orci rhoncus et. Fusce malesuada nec ligula ut ornare. In at est aliquam, porttitor lorem sed, lobortis dolor. Mauris mattis sem eu enim consectetur tempor. Sed semper tortor quis quam convallis, quis semper tortor placerat. Aliquam viverra vitae turpis in gravida. Sed rhoncus condimentum fringilla.</p>
-		</article>
-	</section>
-	<section class="myexample duplex">
+		</div>
+	</article>
+	<article class="myexample duplex">
 		<header>
 			<p><img src="3.jpg" alt="Winter tree" /></p>
 			<h1>Winter tree</h1>
 			<p>Etiam suscipit tristique sapien</p>
 		</header>
-		<article>
+		<div>
 			<p>Etiam suscipit tristique sapien, eget pulvinar orci malesuada nec. Etiam et lacus magna. Duis cursus rhoncus ullamcorper. Suspendisse finibus mauris rhoncus lorem molestie egestas. Ut ornare dui euismod, suscipit turpis sit amet, convallis lorem. Fusce fermentum ultricies nulla quis commodo. Sed non velit nisl. Sed congue sit amet lectus vitae tincidunt. Morbi congue ante eget luctus aliquet. Maecenas sit amet mi pharetra, dictum orci lacinia, rutrum massa. Praesent ullamcorper, massa vitae lobortis pellentesque, metus velit convallis ligula, ut fermentum justo lorem ut est. Vestibulum vestibulum augue dolor, non scelerisque diam scelerisque a. Morbi vel aliquam nunc. Morbi iaculis diam eget sem volutpat rhoncus. Praesent pulvinar, nunc id placerat elementum, augue felis venenatis nulla, vitae pretium nunc tellus et neque. Integer condimentum eget ipsum et feugiat.</p>
-		</article>
-	</section>
-	<section class="myexample duplex">
+		</div>
+	</article>
+	<article class="myexample duplex">
 		<header>
 			<p><img src="4.jpg" alt="Autumn" /></p>
 			<h1>Autumn</h1>
 			<p>Integer luctus ante cursus</p>
 		</header>
-		<article>
+		<div>
 			<p>Integer luctus ante cursus, vehicula leo ac, condimentum orci. In porta lacinia magna sed dignissim. Sed ipsum ligula, aliquet dictum eros non, lobortis aliquet est. Vestibulum hendrerit egestas scelerisque. Nam vehicula ornare velit, vehicula efficitur sapien hendrerit ut. Curabitur laoreet efficitur arcu eget viverra. Aenean sagittis nisl eu ante auctor, id molestie sapien efficitur. Praesent magna magna, consequat in diam eget, sagittis condimentum neque. Pellentesque vitae massa sodales, vestibulum sem non, semper tellus. Quisque ornare dictum dui nec aliquet. In sodales nec eros at consequat.</p>
-		</article>
-	</section>
+		</div>
+	</article>
 </div>
 
-<h2>License</h2>
-
-<p>
-	<strong>duplex.css</strong> is released under the GNU Public License, version 3 or later (<a href="http://www.gnu.org/licenses/gpl-3.0-standalone.html" target="_blank">read</a>). The code is <a href="https://github.com/madmurphy/duplex.css/" target="_blank">available on GitHub</a>.
-</p>
+<footer>
+<h2>Free software</h2>
+<p><strong>duplex.css</strong> is free software. You can redistribute it and/or modify it under the terms of the <a href="https://www.gnu.org/licenses/gpl-3.0-standalone.html" target="_blank" rel="noopener">GPL license</a>, version 3 or any later version. The code is <a href="https://github.com/madmurphy/duplex.css/" target="_blank" rel="noopener">available on GitHub</a>.</p>
+</footer>
 
 </body>
 </html>

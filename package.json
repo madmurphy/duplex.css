@@ -1,9 +1,9 @@
 {
 	"name": "duplex.css",
-	"version": "1.0.1",
+	"version": "2.0.0",
 	"description": "A simple \"flip effect\" for double-sided contents written in pure CSS",
 	"style": "duplex.css",
-	"license": "GPL-3.0",
+	"license": "GPL-3.0-or-later",
 	"author": "madmurphy",
 	"repository": {
 		"type": "git",

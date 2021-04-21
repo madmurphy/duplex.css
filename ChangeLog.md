@@ -1,6 +1,15 @@
 # Change Log
 
-## [1.0.1] - 2017-07-22
+
+## 2.0.0 (2021-04-21)
+
+Changes:
+
+* The DOM tree has been rewritten
+* Documentation
+
+
+## 1.0.1 (2017-07-22)
 
 Changes:
 
@@ -8,6 +17,7 @@ Changes:
 * Documentation
 * Code review
 
-## [1.0.0] - 2017-07-21
+
+## 1.0.0 (2017-07-21)
 
 duplex.css 1.0.0 is released!
